@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
   deleteVoter,
   refreshVoters,
+  editVoter,
 } from '../../actions/voterActions';
 
 import { VoterListPage } from '../pages/VoterListPage';
@@ -16,6 +17,7 @@ export const VoterListPageContainer = () => {
   const dispatchProps = bindActionCreators({
     onDeleteVoter: deleteVoter,
     onRefreshVoters: refreshVoters,
+    onEditVoters: editVoter,
   }, useDispatch());
 
 
