@@ -29,16 +29,46 @@
       "birthdate": "05/12/1980",
       "email": "c@test.com",
       "phone": "12341242421"
+    },
+    {
+      "firstName": "Kathir",
+      "lastName": "Radhakrishnan",
+      "address": "8409 High Meadows Dr",
+      "city": "Plano",
+      "birthdate": "",
+      "email": "rkathir@gmail.com",
+      "phone": "14692475175",
+      "id": 4
     }
   ],
   "electiondata": [
     {
-      "id": 1,
-      "title": "",
-      "questions": [],
-      "voters": [],
-      "multiplequestions": false,
-      "showTotal": true
+        "id": 1,
+        "title": "Favorite City",
+        "options": [
+            { "id": 1, "name": "San Francisco", "votecount": 0},
+            { "id": 2, "name": "Mountain View", "votecount": 0},
+            { "id": 3, "name": "Plano", "votecount": 0}
+        ],
+        "voters": [
+            {"id": 1 },
+            {"id": 2 }
+        ],
+        "multiplequestions": false,
+        "showTotal": true,
+        "totalvote": 0
+    },
+    {
+        "id": 2,
+        "title": "Favorite Car",
+        "options": [
+            { "name": "San Francisco"},
+            { "name": "Mountain View"},
+            { "name": "Plano"}
+        ],
+        "voters": [],
+        "multiplequestions": false,
+        "showTotal": true
     }
-  ]
+]
 }
