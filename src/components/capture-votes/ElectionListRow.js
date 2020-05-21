@@ -5,13 +5,13 @@ import { DataCell } from "./misc";
 export const ElectionListRow = ({ elections, onSelect: checkPersonalnfo }) => {
   return (
     <tr>
-      <DataCell>{elections.id}</DataCell>
-      <DataCell>{elections.title}</DataCell>
-      <DataCell>
+      <td>{elections.id}</td>
+      <td>{elections.title}</td>
+      <td>
         <button type="button" onClick={() => checkPersonalnfo(elections.id)}>
           Select
         </button>
-      </DataCell>
+      </td>
     </tr>
   );
 };

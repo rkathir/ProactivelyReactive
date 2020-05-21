@@ -2,15 +2,13 @@ import React from "react";
 
 import { useForm } from "../../hooks/useForm";
 
-export const ElectionPersonalInfoCheck = ({ buttonText, onSubmitInfo }) => {
+export const ElectionPersonalInfoCheck = () => {
   const [voterForm, change] = useForm({
     firstName: "",
     birthdate: "",
   });
 
-  const submitInfo = () => {
-    onSubmitInfo({ ...voterForm });
-  };
+  const submitInfo = () => {};
 
   return (
     <form>
@@ -35,7 +33,7 @@ export const ElectionPersonalInfoCheck = ({ buttonText, onSubmitInfo }) => {
         />
       </div>
       <button type="button" onClick={submitInfo}>
-        {buttonText}
+        Submit
       </button>
     </form>
   );

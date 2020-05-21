@@ -19,7 +19,11 @@ export const ElectionTable = ({
       </thead>
       <tbody>
         {elections.map((elections) => (
-          <ElectionListRow key={elections.id} elections={elections} />
+          <ElectionListRow
+            key={elections.id}
+            elections={elections}
+            onSelect={selectElection}
+          />
         ))}
       </tbody>
     </table>
