@@ -29,16 +29,43 @@
       "birthdate": "05/12/1980",
       "email": "c@test.com",
       "phone": "12341242421"
+    },
+    {
+      "firstName": "Kathir",
+      "lastName": "Radhakrishnan",
+      "address": "8409 High Meadows Dr",
+      "city": "Plano",
+      "birthdate": "",
+      "email": "rkathir@gmail.com",
+      "phone": "14692475175",
+      "id": 4
     }
   ],
   "electiondata": [
     {
       "id": 1,
-      "title": "",
-      "questions": [],
-      "voters": [],
-      "multiplequestions": false,
-      "showTotal": true
+      "title": "First election",
+      "questions": [
+         {
+          "questionid": 1,
+          "title": "Do you agree the product is useful",
+          "yesvote": 0,
+          "novote": 0
+         },
+         {
+          "questionid": 2, 
+          "title": "Do you agree the product is useful",
+          "yesvote": 0,
+          "novote": 0
+         }         
+      ],
+      "voters": [
+        { "id": 1 },
+        { "id": 2 }
+      ],
+      "totalvote": 0
     }
+
   ]
+
 }
