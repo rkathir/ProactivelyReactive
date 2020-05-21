@@ -1,7 +1,5 @@
-#sidebar.home-page {
-  background-image: url(../images/sidebar/home-sidebar.jpg);
-}
-
-#sidebar.about-page {
-  background-image: url(../images/sidebar/about-sidebar.jpg);
+#sidebar {
+  background-image: url(../images/sidebar/vote.jpg);
+  grid-area: sidebar; 
+  background-size: cover;
 }

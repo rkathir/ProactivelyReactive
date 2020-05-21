@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+ 
+label {
+    display: inline-block;
+    width: 100px;;
+    text-align: right;
+    padding: 4px;
+}
