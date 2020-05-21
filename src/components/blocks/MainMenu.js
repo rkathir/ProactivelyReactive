@@ -10,7 +10,7 @@ export const MainMenu = () => {
     { id: 2, url: "/registerVoter", caption: "Register Voters" },
     { id: 3, url: "/listVoters", caption: "List Voters" },
     { id: 4, url: "/createElection", caption: "Create Elections" },
-    { id: 5, url: "/electionList", caption: "Capture Votes" },
+    { id: 5, url: "/captureVotes", caption: "Capture Votes" },
   ];
 
   return (
