@@ -33,9 +33,10 @@ The application must support 3 of 3 workflows. To switch between work flows cons
 
 ### Workflow 1 - Register Voters
 
-1. Create a voter registration system which collects the following information from the voter: first name, last name, address, county/city, birthdate, email, and phone.
+1. Create a voter registration system which collects the following information from the voter: first name, last name, address, county/city, birthdate, email, and phone.  
 
 2. From a main screen, the user will click a "Register Voter" button. A registration form will be displayed. The user will enter the data, click "Complete Registration" and return to the main screen.
+        
 
 3. On the main screen there should be a button to display the list of registered voters.
 
