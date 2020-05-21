@@ -8,6 +8,7 @@ export const VoterListPage = ({
   voters,
   onDeleteVoter: deleteVoter,
   onRefreshVoters: refreshVoters,
+  onEditVoters: editVoters,
 }) => {
   
   useEffect(() => {
