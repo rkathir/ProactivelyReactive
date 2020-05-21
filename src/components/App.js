@@ -10,7 +10,7 @@ import { PageHeader } from './blocks/PageHeader';
 import { PageFooter } from './blocks/PageFooter';
 import { MainMenu } from './blocks/MainMenu';
 import { Content } from './blocks/Content';
-import { Sidebar } from './blocks/Sidebar';
+
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
 
