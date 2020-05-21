@@ -12,7 +12,7 @@ import { VoterListPage } from '../pages/VoterListPage';
 
 export const VoterListPageContainer = () => {
 
-  const voters = useSelector(state => state);
+  const voters = useSelector(state => state.voters);
 
   const dispatchProps = bindActionCreators({
     onDeleteVoter: deleteVoter,
