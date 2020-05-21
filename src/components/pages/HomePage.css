@@ -1,0 +1,8 @@
+#home-page-content ul li {
+    border: 2px solid slateblue;
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    text-align: center;
+    font-size: 2rem;
+}

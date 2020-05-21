@@ -1,6 +1,8 @@
 #main-menu {
   grid-area: menu;
   position: relative;
+  background-color: lightskyblue;
+  font-weight: bold;
 }
 
 #main-menu ul {
