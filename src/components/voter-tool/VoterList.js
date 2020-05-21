@@ -17,7 +17,7 @@ export const VoterList = ({ voters, onEditVoter, onDeleteVoter }) => {
           <th>Phone</th>
         </tr>
       </thead>
-      <tbody className={voterToolPageStyles.colorList}>
+      <tbody className={voterToolPageStyles.voterList}>
         {voters.map((c) => (
           <tr key={c.id}>
             <td>{c.firstName}</td>

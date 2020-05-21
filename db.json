@@ -29,16 +29,6 @@
       "birthdate": "05/12/1980",
       "email": "c@test.com",
       "phone": "12341242421"
-    },
-    {
-      "firstName": "Kathir",
-      "lastName": "Radhakrishnan",
-      "address": "8409 High Meadows Dr",
-      "city": "Plano",
-      "birthdate": "",
-      "email": "rkathir@gmail.com",
-      "phone": "14692475175",
-      "id": 4
     }
   ],
   "electiondata": [

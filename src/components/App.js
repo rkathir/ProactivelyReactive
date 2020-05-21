@@ -14,9 +14,7 @@ import { ElectionListPage } from "./pages/ElectionListPage";
 import { ElectionPersonalInfoCheck } from "../components/capture-votes/ElectionPersonalInfoCheck";
 import { SideBar } from "./blocks/Sidebar";
 
-import { colorStore } from "../stores/colorStore";
 import { voterStore } from "../stores/voterStore";
-import { ColorToolPageContainer } from "./containers/ColorToolPageContainer";
 
 const activeElectionList = [
   {
@@ -59,11 +57,6 @@ export const App = () => {
           </Route>
           <Route path="/captureVotes/checkPersonalInfo">
             <ElectionPersonalInfoCheck />
-          </Route>
-          <Route path="/color-tool">
-            <Provider store={colorStore}>
-              <ColorToolPageContainer />
-            </Provider>
           </Route>
         </Switch>
       </Content>
