@@ -1,3 +1,9 @@
 {
-    
+    "electiondata" : {
+        "title": "",
+        "questions": [],
+        "voters": [],
+        "multiplequestions" : false,
+        "showTotal": true
+    }
 }
