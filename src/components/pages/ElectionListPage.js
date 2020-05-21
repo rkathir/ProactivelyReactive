@@ -1,15 +1,21 @@
 import React from "react";
-
+import { useHistory } from "react-router-dom";
 import { SectionHeader } from "../blocks/SectionHeader";
 import { ContentSection } from "../blocks/ContentSection";
-import { ElectionTable } from "../election-list/ElectionTable";
+import { ElectionTable } from "../capture-votes/ElectionTable";
 
-export const ElectionListPage = ({ elections, onSelect: selectElection }) => {
+export const ElectionListPage = ({ elections }) => {
+  const history = useHistory();
+
+  const selectandRedirect = () => {
+    history.push("/captureVotes/checkPersonalInfo");
+  };
+
   return (
     <>
       <SectionHeader headerText="Active Election List" />
-      <ContentSection>
-        <ElectionTable elections={elections} onSelect={selectElection} />
+      <ContentSection headerText="Select your choice of election">
+        <ElectionTable elections={elections} onSelect={selectandRedirect} />
       </ContentSection>
     </>
   );
