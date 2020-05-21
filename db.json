@@ -29,6 +29,7 @@
       "birthdate": "05/12/1980",
       "email": "c@test.com",
       "phone": "12341242421"
+<<<<<<< HEAD
     },
     {
       "firstName": "Kathir",
@@ -59,6 +60,8 @@
       "email": "skchella@yahoo.com",
       "phone": "2142279721",
       "id": 6
+=======
+>>>>>>> a06463a8b42cf936b78de47928eff5daa162d3ce
     }
   ],
   "electiondata": [
