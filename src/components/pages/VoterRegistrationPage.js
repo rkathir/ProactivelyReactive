@@ -6,22 +6,15 @@ import { VoterForm } from '../voter-tool/VoterForm';
 import './VoterRegistrationPage.css';
 
 export const VoterRegistrationPage = ({
-  voters,
   onAddVoter: addVoter,
-  onDeleteVoter: deleteVoter,
-  onRefreshVoters: refreshVoters,
 }) => {
-
-//   useEffect(() => {
-//     refreshVoters();
-//   }, []);
 
   return (
     <>
       <SectionHeader headerText="Voter Registration Form" />
 
       <ContentSection headerText="Please fill in the details">
-        <VoterForm buttonText="Add Voter" onSubmitVoter={addVoter} />
+        <VoterForm buttonText="Complete Registration" onSubmitVoter={addVoter} />
       </ContentSection>
     </>
   );

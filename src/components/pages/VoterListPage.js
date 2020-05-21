@@ -9,6 +9,10 @@ export const VoterListPage = ({
   onDeleteVoter: deleteVoter,
   onRefreshVoters: refreshVoters,
 }) => {
+  
+  useEffect(() => {
+    refreshVoters();
+  }, []);
 
   return (
     <>
