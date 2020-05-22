@@ -34,49 +34,65 @@ The application must support 3 of 3 workflows. To switch between work flows cons
 ### Workflow 1 - Register Voters
 
 1. Create a voter registration system which collects the following information from the voter: first name, last name, address, county/city, birthdate, email, and phone.  
+(DONE)
 
 2. From a main screen, the user will click a "Register Voter" button. A registration form will be displayed. The user will enter the data, click "Complete Registration" and return to the main screen.
-        
+(DONE)    
 
 3. On the main screen there should be a button to display the list of registered voters.
+(DONE)
 
-4. Add the ability to delete voters, edit voters and delete multiple voters.
+4. Add the ability to delete voters, edit voters (DONE) and delete multiple voters.(NO)
 
 5. Add the ability to sort the voter list on a given field by clicking the column header. Only an ascending sort needs to be supported.
+(NO)
 
 6. Use CSS modules to style the table.
+(DONE)
 
 ### Workflow 2 - Capture Votes
 
 1. From the main screen, select a ballot to be used for voting. Then click a button named 'Vote' to commence the voting process.
+(DONE)
 
 2. The user will type in their identifying information. If their identifying information is valid the ballot should be shown. If the identifying information is not valid, the ballot should not be shown, and an error message should be shown. The identifying information can be anything, just pick something simple and unique to each voter.
+(DONE)
 
 3. Users are limited to voting once in an election.
+(NO)
 
 4. The ballot should list the items under consideration with a checkbox next to each item. Checking the box is considered to be 'Yes', leaving it blank is a 'No'. You can do something more complex than a checkbox, but a checkbox is the minimum.
+(DONE)
 
 5. When the ballot is completed, the user should click a 'Cast Vote' button. A success screen is shown with a button to return to the main screen.
+(DONE)
 
 6. Use CSS grid to organize the layout of the voting screen.
+(NO)
 
 ### Workflow 3 - Election Creation
 
 1. Elections are a list of questions (one or more). Create a form to create new elections, and a table to display the elections in the system.
+(DONE)
 
 1. Each row in the table should have a 'View Results' button to see the completed ballots for a particular election.
+(NO)
 
 1. Once created, elections cannot be modified or deleted.
-
+(DONE)
 ### Additional Requirements
 
 - The theme of the web site should match the color scheme of the mascot image.
+(DONE)
 
 - On each page, display a header which includes the team name and mascot picture. Also, include some kind of motivational team slogan statement in the header.
+(DONE)
 
 - Concerning state, use Redux to manage application state. Use React to manage form control state (controlled components). Please use React-Redux to connect React and Redux, and use Redux-Thunk for handling asychronous operations. Use React-Redux Hooks.
+(DONE)
 
 - Please use React Hooks to manage local component form state. 
+MOSTLY
 
 ## Conditions of Victory
 

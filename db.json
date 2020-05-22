@@ -34,19 +34,19 @@
   "electiondata": [
     {
       "id": 1,
-      "title": "First election",
+      "title": "Food!!",
       "questions": [
         {
           "questionid": 1,
-          "title": "Do you agree the product is useful",
-          "yesvote": 0,
-          "novote": 0
+          "title": "Pineapple on pizza?",
+          "yesvote": 5,
+          "novote": 7
         },
         {
           "questionid": 2,
-          "title": "Do you agree the product is useful",
-          "yesvote": 0,
-          "novote": 0
+          "title": "Coffee is better than tea?",
+          "yesvote": 7,
+          "novote": 5
         }
       ],
       "voters": [
@@ -60,18 +60,18 @@
       "totalvote": 0
     },
     {
-      "title": "test",
+      "title": "Fav Colors",
       "questions": [
         {
-          "title": "q1",
-          "yesvote": 0,
-          "novote": 0,
+          "title": "Purple is better than pink?",
+          "yesvote": 1,
+          "novote": 3,
           "id": 1
         },
         {
-          "title": "q1",
-          "yesvote": 0,
-          "novote": 0,
+          "title": "Glitter everywhere?",
+          "yesvote": 1,
+          "novote": 3,
           "id": 2
         }
       ],

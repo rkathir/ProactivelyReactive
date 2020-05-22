@@ -2,22 +2,22 @@ import React from "react";
 import { bindActionCreators } from "redux";
 import { useSelector, useDispatch } from "react-redux";
 import {
-  addElection,
   refreshElection,
-  createSelectElectionRequestAction
+  saveElection
 } from "../../actions/electionActions";
 
-import { ElectionListPage } from "../pages/ElectionListPage";
-export const ElectionListPageContainer = () => {
+import { ElectionCastVotePage } from '../pages/ElectionCastVotePage';
+
+export const ElectionCastVoteContainer = () => {
   const electionData = useSelector((state) => state.electionData);
+  const selectElectionId = useSelector((state) => state.selectElectionId)
 
   const dispatchProps = bindActionCreators(
     {
-      onAddElection: addElection,
       onRefreshElection: refreshElection,
-      onSelectedElection: createSelectElectionRequestAction,
+      onSaveElection: saveElection,
     },
     useDispatch()
   );
-  return <ElectionListPage {...dispatchProps} elections={electionData} />;
+  return <ElectionCastVotePage {...dispatchProps} elections={electionData} selectedElectionId={selectElectionId} />;
 };
