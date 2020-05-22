@@ -11,27 +11,27 @@ import { HomePage } from "./pages/HomePage";
 import { VoterRegistrationPageContainer } from "./containers/VoterRegistrationPageContainer";
 import { ElectionRegistrationContainer } from "./containers/ElectionRegistrationContainer";
 import { VoterListPageContainer } from "./containers/VoterListPageContainer";
-import { ElectionListPage } from "./pages/ElectionListPage";
+import { ElectionListPageContainer } from "./containers/ElectionListPageContainer";
 import { ElectionPersonalInfoCheck } from "../components/capture-votes/ElectionPersonalInfoCheck";
 import { SideBar } from "./blocks/Sidebar";
 
 import { appStore } from "../stores/appStore";
 
 
-const activeElectionList = [
-  {
-    id: 1,
-    title: "Congress Vote",
-  },
-  {
-    id: 2,
-    title: "Favorite Fruit",
-  },
-  {
-    id: 3,
-    title: "Favorite Car",
-  },
-];
+// const activeElectionList = [
+//   {
+//     id: 1,
+//     title: "Congress Vote",
+//   },
+//   {
+//     id: 2,
+//     title: "Favorite Fruit",
+//   },
+//   {
+//     id: 3,
+//     title: "Favorite Car",
+//   },
+// ];
 
 export const App = () => {
   return (
@@ -58,14 +58,12 @@ export const App = () => {
                 <ElectionRegistrationContainer />
             </Provider>
           </Route>
-          <Route path="/electionList">
-            <ElectionListPage elections={activeElectionList} />
-          </Route>
-          <Route path="/createElection"></Route>
           <Route path="/captureVotes" exact>
-            <ElectionListPage elections={activeElectionList} />
+            <Provider store={appStore}>
+              <ElectionListPageContainer />
+            </Provider>
           </Route>
-          <Route path="/captureVotes/checkPersonalInfo">
+          <Route path="/captureVotes/checkPersonalInfo" exact>
             <ElectionPersonalInfoCheck />
           </Route>
         </Switch>

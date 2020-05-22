@@ -5,7 +5,8 @@ import {
   CANCEL_VOTER_REQUEST_ACTION,
 } from '../actions/voterActions';
 import {
-  REFRESH_ELECTION_DONE_ACTION
+  REFRESH_ELECTION_DONE_ACTION,
+  SELECT_ELECTION_REQUEST_ACTION,
 } from '../actions/electionActions';
 
 export const voterReducer = (voters = [], action) => {
@@ -28,15 +29,23 @@ export const editVoterIdReducer = (editVoterId = -1, action) => {
   return editVoterId;
 };
 
-export const electionReducer = (electiondata = [], action) => {
+export const electionReducer = (electionData = [], action) => {
   if (action.type === REFRESH_ELECTION_DONE_ACTION) {
-    return action.electiondata;
+    return action.electionData;
   }
-  return electiondata;
+  return electionData;
 };
+
+export const selectElectionIdReducer = (selectElectionId = -1, action) => {
+  if(action.type === SELECT_ELECTION_REQUEST_ACTION){
+    return action.electionId;
+  }
+  return selectElectionId;
+}
 
 export const appReducers = combineReducers({
   voters: voterReducer,
   editVoterId: editVoterIdReducer,
-  electiondata: electionReducer,
+  electionData: electionReducer,
+  selectElectionId: selectElectionIdReducer,
 });

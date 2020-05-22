@@ -12,13 +12,14 @@
     },
     {
       "id": 2,
-      "firstName": "laura",
+      "firstName": "Test",
       "lastName": "diaz",
       "address": "432 Marine Way",
       "city": "Sunnyvale",
-      "birthdate": "05/12/1982",
-      "email": "b@test.com",
-      "phone": "213412424"
+      "birthdate": "05/12/1983",
+      "email": "b@test.in",
+      "phone": "213412425",
+      "lastname": "dia"
     },
     {
       "id": 3,
