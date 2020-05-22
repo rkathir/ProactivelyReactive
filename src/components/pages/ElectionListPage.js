@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { SectionHeader } from "../blocks/SectionHeader";
@@ -11,7 +12,6 @@ export const ElectionListPage = ({
   const history = useHistory();
 
   useEffect(() => {
-    console.log("refresh called");
     refreshElection();
   }, []);
 

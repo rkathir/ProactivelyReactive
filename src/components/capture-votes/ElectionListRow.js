@@ -1,7 +1,5 @@
 import React from "react";
 
-import { DataCell } from "./misc";
-
 export const ElectionListRow = ({ election, buttonText, onSelect: checkPersonalnfo }) => {
   return (
     <tr>

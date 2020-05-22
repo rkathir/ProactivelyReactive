@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from "react";
 import { useForm } from "../../hooks/useForm";
 import { useHistory } from "react-router-dom";
@@ -9,7 +10,6 @@ export const ElectionPersonalInfoCheck = ({
   onRefreshVoter: refreshVoters,
 }) => {
   useEffect(() => {
-    console.log("refresh called");
     refreshVoters();
   }, []);
 
@@ -22,15 +22,21 @@ export const ElectionPersonalInfoCheck = ({
 
   const submitInfo = () => {
     var formData = document.getElementById("voter-birthdate-input").value;
-
-    // comapring dob with voterData array
-    for (var i = 0; i < voters.length; i++)
+    var validData = false;
+    // comapring dob with voters array
+    for (var i = 0; i < voters.length; i++) {
       if (voters[i].birthdate === formData) {
-        return history.push("/captureVotes/checkPersonalInfo/castVote");
+        validData = true;
       } else {
-        alert("Faliure");
-        resetPIForm();
+        validData = false;
       }
+    }
+    if(validData === true){
+      return history.push("/captureVotes/checkPersonalInfo/castVote");
+    } else {
+      alert("Invalid User");
+      resetPIForm();
+    }
   };
 
   return (
