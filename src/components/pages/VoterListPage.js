@@ -8,7 +8,7 @@ export const VoterListPage = ({
   voters,
   onDeleteVoter: deleteVoter,
   onRefreshVoters: refreshVoters,
-  onEditVoters: editVoters,
+  onEditVoters: editVoter,
 }) => {
   
   useEffect(() => {
@@ -20,7 +20,7 @@ export const VoterListPage = ({
       <SectionHeader headerText="Voter List" />
 
       <ContentSection>
-        <VoterList voters={voters} onDeleteVoter={deleteVoter} />
+        <VoterList voters={voters} onDeleteVoter={deleteVoter} onEditVoter={editVoter} />
       </ContentSection>
 
     </>

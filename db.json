@@ -29,6 +29,7 @@
       "birthdate": "05/12/1980",
       "email": "c@test.com",
       "phone": "12341242421"
+<<<<<<< HEAD
     },
     {
       "firstName": "Kathir",
@@ -39,6 +40,28 @@
       "email": "rkathir@gmail.com",
       "phone": "14692475175",
       "id": 4
+    },
+    {
+      "firstName": "Kathir",
+      "lastName": "Radhakrishnan",
+      "address": "8409 High Meadows Dr",
+      "city": "Plano",
+      "birthdate": "",
+      "email": "rkathir@gmail.com",
+      "phone": "14692475175",
+      "id": 5
+    },
+    {
+      "firstName": "Rakesh",
+      "lastName": "",
+      "address": "High meadows dr",
+      "city": "plano",
+      "birthdate": "",
+      "email": "skchella@yahoo.com",
+      "phone": "2142279721",
+      "id": 6
+=======
+>>>>>>> a06463a8b42cf936b78de47928eff5daa162d3ce
     }
   ],
   "electiondata": [
@@ -46,26 +69,176 @@
       "id": 1,
       "title": "First election",
       "questions": [
-         {
+        {
           "questionid": 1,
           "title": "Do you agree the product is useful",
           "yesvote": 0,
           "novote": 0
-         },
-         {
-          "questionid": 2, 
+        },
+        {
+          "questionid": 2,
           "title": "Do you agree the product is useful",
           "yesvote": 0,
           "novote": 0
-         }         
+        }
       ],
       "voters": [
-        { "id": 1 },
-        { "id": 2 }
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        }
       ],
       "totalvote": 0
+    },
+    {
+      "title": "Joy of Living Tee",
+      "options": [],
+      "id": 2
+    },
+    {
+      "title": "Short-Sleeve Unisex T-Shirt",
+      "questions": [],
+      "voters": [],
+      "totalvote": 0,
+      "id": 3
+    },
+    {
+      "title": "Joy of Living Tee",
+      "questions": "question1",
+      "voters": [],
+      "totalvote": 0,
+      "id": 4
+    },
+    {
+      "title": "dd",
+      "questions": [
+        {
+          "title": "",
+          "yesvote": 0,
+          "novote": 0
+        }
+      ],
+      "voters": [],
+      "totalvote": 0,
+      "question2add": "dd",
+      "id": 5
+    },
+    {
+      "title": "Plano City Council",
+      "questions": [
+        {
+          "title": "",
+          "yesvote": 0,
+          "novote": 0
+        },
+        {
+          "title": "Approve Cricket stadium",
+          "yesvote": 0,
+          "novote": 0
+        }
+      ],
+      "voters": [],
+      "totalvote": 0,
+      "question2add": "Approve Cricket stadium",
+      "id": 6
+    },
+    {
+      "title": "San Diego City Council",
+      "questions": [
+        {
+          "title": "",
+          "yesvote": 0,
+          "novote": 0
+        },
+        {
+          "title": "Approve Cricket Stadium",
+          "yesvote": 0,
+          "novote": 0
+        }
+      ],
+      "voters": [],
+      "totalvote": 0,
+      "question2add": "Approve Cricket Stadium",
+      "id": 7
+    },
+    {
+      "title": "San Diego City Council",
+      "questions": [
+        {
+          "title": "",
+          "yesvote": 0,
+          "novote": 0
+        },
+        {
+          "title": "ABC",
+          "yesvote": 0,
+          "novote": 0
+        }
+      ],
+      "voters": [],
+      "totalvote": 0,
+      "question2add": "ABC",
+      "id": 8
+    },
+    {
+      "title": "Test1",
+      "questions": [
+        {
+          "title": "Test1",
+          "yesvote": 0,
+          "novote": 0
+        }
+      ],
+      "voters": [],
+      "totalvote": 0,
+      "question2add": "",
+      "id": 9
+    },
+    {
+      "title": "US Election",
+      "questions": [
+        {
+          "title": "Question1",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 1
+        },
+        {
+          "title": "Question2",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 2
+        }
+      ],
+      "voters": [],
+      "totalvote": 0,
+      "question2add1": "Question1",
+      "question2add2": "Question2",
+      "id": 10
+    },
+    {
+      "title": "RakeshTest1",
+      "questions": [
+        {
+          "title": "Question1",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 1
+        },
+        {
+          "title": "Question2",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 2
+        }
+      ],
+      "voters": [],
+      "totalvote": 0,
+      "question2add1": "Question1",
+      "question2add2": "Question2",
+      "id": 11
     }
-
   ]
-
 }

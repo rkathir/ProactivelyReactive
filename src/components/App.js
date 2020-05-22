@@ -9,15 +9,14 @@ import { MainMenu } from "./blocks/MainMenu";
 import { Content } from "./blocks/Content";
 import { HomePage } from "./pages/HomePage";
 import { VoterRegistrationPageContainer } from "./containers/VoterRegistrationPageContainer";
+import { ElectionRegistrationContainer } from "./containers/ElectionRegistrationContainer";
 import { VoterListPageContainer } from "./containers/VoterListPageContainer";
 import { ElectionListPage } from "./pages/ElectionListPage";
 import { ElectionPersonalInfoCheck } from "../components/capture-votes/ElectionPersonalInfoCheck";
 import { ElectionCastVotePage } from "../components/capture-votes/ElectionCastVotePage";
 import { SideBar } from "./blocks/Sidebar";
 
-import { colorStore } from "../stores/colorStore";
-import { voterStore } from "../stores/voterStore";
-import { ColorToolPageContainer } from "./containers/ColorToolPageContainer";
+import { appStore } from "../stores/appStore";
 
 const activeElectionList = [
   {
@@ -45,14 +44,22 @@ export const App = () => {
             <HomePage />
           </Route>
           <Route path="/registerVoter">
-            <Provider store={voterStore}>
+            <Provider store={appStore}>
               <VoterRegistrationPageContainer />
             </Provider>
           </Route>
           <Route path="/listVoters">
-            <Provider store={voterStore}>
+            <Provider store={appStore}>
               <VoterListPageContainer />
             </Provider>
+          </Route>
+          <Route path="/createElection">
+            <Provider store={appStore}>
+              <ElectionRegistrationContainer />
+            </Provider>
+          </Route>
+          <Route path="/electionList">
+            <ElectionListPage elections={activeElectionList} />
           </Route>
           <Route path="/createElection"></Route>
           <Route path="/captureVotes" exact>
@@ -63,11 +70,6 @@ export const App = () => {
           </Route>
           <Route path="/captureVotes/checkPersonalInfo/castVote">
             <ElectionCastVotePage />
-          </Route>
-          <Route path="/color-tool">
-            <Provider store={colorStore}>
-              <ColorToolPageContainer />
-            </Provider>
           </Route>
         </Switch>
       </Content>
