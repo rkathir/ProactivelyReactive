@@ -5,10 +5,12 @@ import { ContentSection } from '../blocks/ContentSection';
 import { VoterList } from '../voter-tool/VoterList';
 
 export const VoterListPage = ({
-  voters,
+  voters, editVoterId, 
   onDeleteVoter: deleteVoter,
   onRefreshVoters: refreshVoters,
-  onEditVoters: editVoter,
+  onEditVoter: editVoter,
+  onSaveVoter: saveVoter,
+  onCancelVoter: cancelVoter
 }) => {
   
   useEffect(() => {
@@ -20,7 +22,9 @@ export const VoterListPage = ({
       <SectionHeader headerText="Voter List" />
 
       <ContentSection>
-        <VoterList voters={voters} onDeleteVoter={deleteVoter} onEditVoter={editVoter} />
+        <VoterList voters={voters} onDeleteVoter={deleteVoter} onEditVoter={editVoter} 
+          editVoterId={editVoterId} onSaveVoter={saveVoter} onCancelVoter={cancelVoter}
+        />
       </ContentSection>
 
     </>

@@ -1,8 +1,15 @@
 import React from "react";
 
+import { VoterViewRow } from './VoterViewRow';
+import { VoterEditRow } from './VoterEditRow';
+
 import voterToolPageStyles from "./VoterList.module.css";
 
-export const VoterList = ({ voters, onEditVoter, onDeleteVoter }) => {
+export const VoterList = ({ 
+  voters, editVoterId,
+  onEditVoter: editVoter, onDeleteVoter: deleteVoter,
+  onSaveVoter: saveVoter, onCancelVoter: cancelVoter,
+  }) => {
   return (
     <table>
       <thead>
@@ -15,24 +22,14 @@ export const VoterList = ({ voters, onEditVoter, onDeleteVoter }) => {
           <th>BirthDate</th>
           <th>Email</th>
           <th>Phone</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody className={voterToolPageStyles.voterList}>
-        {voters.map((c) => (
-          <tr key={c.id}>
-            <td>{c.firstName}</td>
-            <td>{c.lastName}</td>
-            <td>{c.address}</td>
-            <td>{c.city}</td>
-            <td>{c.birthdate}</td>
-            <td>{c.email}</td>
-            <td>{c.phone}</td>
-            <td>
-              <button type="button" onClick={() => onEditVoter(c.id)}>Edit</button>
-              <button type="button" onClick={() => onDeleteVoter(c.id)}>Delete</button>
-            </td>
-          </tr>
-        ))}
+        {voters.map((voter) => editVoterId === voter.id
+          ? <VoterEditRow key={voter.id} voterRow={voter} onSaveVoter={saveVoter} onCancelVoter={cancelVoter} />
+          : <VoterViewRow key={voter.id} voterRow={voter} onEditVoter={editVoter} onDeleteVoter={deleteVoter} />
+        )}
       </tbody>
     </table>
   );

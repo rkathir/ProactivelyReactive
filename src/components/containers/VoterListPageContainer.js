@@ -5,7 +5,10 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
   deleteVoter,
   refreshVoters,
-  editVoter,
+  createEditVoterRequestAction,
+  saveVoter,
+  createCancelVoterRequestAction,
+
 } from '../../actions/voterActions';
 
 import { VoterListPage } from '../pages/VoterListPage';
@@ -13,13 +16,16 @@ import { VoterListPage } from '../pages/VoterListPage';
 export const VoterListPageContainer = () => {
 
   const voters = useSelector(state => state.voters);
+  const editVoterId = useSelector(state => state.editVoterId);
 
   const dispatchProps = bindActionCreators({
     onDeleteVoter: deleteVoter,
     onRefreshVoters: refreshVoters,
-    onEditVoters: editVoter,
+    onEditVoter: createEditVoterRequestAction,
+    onCancelVoter: createCancelVoterRequestAction,
+    onSaveVoter: saveVoter,
   }, useDispatch());
 
 
-  return <VoterListPage {...dispatchProps} voters={voters} />;
+  return <VoterListPage {...dispatchProps} voters={voters} editVoterId={editVoterId} />;
 };
