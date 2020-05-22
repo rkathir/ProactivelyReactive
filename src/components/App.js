@@ -38,9 +38,14 @@ export const App = () => {
               <VoterListPageContainer />
             </Provider>
           </Route>
-          <Route path="/createElection">
+          <Route path="/createElection" exact>
             <Provider store={appStore}>
               <ElectionRegistrationContainer />
+            </Provider>
+          </Route>
+          <Route path="/createElection/viewResult">
+            <Provider store={appStore}>
+                
             </Provider>
           </Route>
           <Route path="/captureVotes" exact>

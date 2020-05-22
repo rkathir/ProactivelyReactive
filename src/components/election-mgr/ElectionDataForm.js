@@ -1,8 +1,15 @@
 import React from 'react';
-
+import { useHistory } from "react-router-dom";
 import { useForm } from '../../hooks/useForm';
+import { SectionHeader } from "../blocks/SectionHeader";
+import { ContentSection } from "../blocks/ContentSection";
+import { ElectionTable } from "../capture-votes/ElectionTable";
 
-export const ElectionDataForm = ({ buttonText, onSubmitElectionData }) => {
+export const ElectionDataForm = ({elections, buttonText, onSubmitElectionData }) => {
+  const history = useHistory();
+
+
+
   const [electionDataFom, change, resetElectionDataForm] = useForm({
     title: "",
     questions: [],
@@ -11,6 +18,10 @@ export const ElectionDataForm = ({ buttonText, onSubmitElectionData }) => {
     question2add1: "",
     question2add2: "",
   });
+
+  const selectandRedirect = () => {
+    history.push("/createElection/viewResult");
+  };
 
   const submitElectionData = () => {
     console.log(JSON.stringify(electionDataFom));
@@ -84,10 +95,14 @@ export const ElectionDataForm = ({ buttonText, onSubmitElectionData }) => {
           </tr>
         </tbody>
       </table>
+      <SectionHeader headerText="Active Election List" />
+      <ContentSection headerText="List">
+        <ElectionTable elections={elections} onSelect={selectandRedirect} buttonText="View Results" />
+      </ContentSection>
     </form>
   );
 };
 
 ElectionDataForm.defaultProps = {
-  buttonText: "Submit Election Data",
+  buttonText: "Save Election Data",
 };

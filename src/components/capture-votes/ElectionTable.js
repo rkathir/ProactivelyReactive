@@ -6,6 +6,7 @@ import { ElectionListRow } from "./ElectionListRow";
 export const ElectionTable = ({
   elections,
   electionsId,
+  buttonText,
   onSelect: selectElection,
 }) => {
   return (
@@ -22,6 +23,7 @@ export const ElectionTable = ({
           <ElectionListRow
             key={election.id}
             election={election}
+            buttonText={buttonText}
             onSelect={selectElection}
           />
         ))}
