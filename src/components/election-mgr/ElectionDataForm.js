@@ -5,7 +5,9 @@ import { SectionHeader } from "../blocks/SectionHeader";
 import { ContentSection } from "../blocks/ContentSection";
 import { ElectionTable } from "../capture-votes/ElectionTable";
 
-export const ElectionDataForm = ({elections, buttonText, onSubmitElectionData }) => {
+export const ElectionDataForm = ({elections, buttonText,
+  onSubmitElectionData, 
+  onSelectedElection: selectedElection, }) => {
   const history = useHistory();
 
 
@@ -19,7 +21,8 @@ export const ElectionDataForm = ({elections, buttonText, onSubmitElectionData })
     question2add2: "",
   });
 
-  const selectandRedirect = () => {
+  const selectandRedirect = (electionId) => {
+    selectedElection(electionId);
     history.push("/createElection/viewResult");
   };
 

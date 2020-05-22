@@ -29,6 +29,16 @@
       "birthdate": "05/12/1986",
       "email": "c@test.com",
       "phone": "12341242421"
+    },
+    {
+      "firstName": "Kathir",
+      "lastName": "Radhakrishnandd",
+      "address": "8409 High Meadows Dr",
+      "city": "Plano",
+      "birthdate": "",
+      "email": "rkathir@gmail.com",
+      "phone": "14692475175",
+      "id": 4
     }
   ],
   "electiondata": [
@@ -78,6 +88,26 @@
       "voters": [],
       "totalvote": 0,
       "id": 2
+    },
+    {
+      "title": "Fav Car",
+      "questions": [
+        {
+          "title": "Telsa",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 1
+        },
+        {
+          "title": "BMW",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 2
+        }
+      ],
+      "voters": [],
+      "totalvote": 0,
+      "id": 3
     }
   ]
 }
