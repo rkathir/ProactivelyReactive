@@ -13,7 +13,6 @@ export const ElectionDataPage = ({
   const history = useHistory();
 
   useEffect(() => {
-    console.log('refresh called');
     refreshElection();
   }, []);
   

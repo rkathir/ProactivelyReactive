@@ -8,7 +8,6 @@ export const ElectionListPage = ( {elections, onRefreshElection: refreshElection
   const history = useHistory();
 
   useEffect(() => {
-    console.log('refresh called');
     refreshElection();
   }, []);
 
