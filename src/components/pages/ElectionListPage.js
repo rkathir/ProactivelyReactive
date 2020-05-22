@@ -20,7 +20,7 @@ export const ElectionListPage = ( {elections, onRefreshElection: refreshElection
     <>
       <SectionHeader headerText="Active Election List" />
       <ContentSection headerText="Select your choice of election">
-        <ElectionTable elections={elections} onSelect={selectandRedirect} />
+        <ElectionTable elections={elections} onSelect={selectandRedirect} buttonText="Select" />
       </ContentSection>
     </>
   );

@@ -7,10 +7,15 @@ import { ElectionDataForm } from '../election-mgr/ElectionDataForm';
 import './VoterRegistrationPage.css';
 
 export const ElectionDataPage = ({
-    onSubmitElectionData: addElection,
+    onSubmitElectionData: addElection, elections, onRefreshElectionData: refreshElection
 }) => {
 
   const history = useHistory();
+
+  useEffect(() => {
+    console.log('refresh called');
+    refreshElection();
+  }, []);
   
   const addElectionAndRedirect = (electiondata) => {
     addElection(electiondata);
@@ -26,7 +31,7 @@ export const ElectionDataPage = ({
       <SectionHeader headerText="Election Manager Form" />
 
       <ContentSection headerText="Please fill in the details">
-        <ElectionDataForm buttonText="Submit Election Data" onSubmitElectionData={addElectionAndRedirect} />
+        <ElectionDataForm buttonText="Submit Election Data" onSubmitElectionData={addElectionAndRedirect}  elections={elections} />
       </ContentSection>
     </>
   );

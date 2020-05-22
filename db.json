@@ -11,65 +11,68 @@
       "phone": "1243124221"
     },
     {
-      "id": 2,
-      "firstName": "Test",
-      "lastName": "diaz",
-      "address": "432 Marine Way",
-      "city": "Sunnyvale",
-      "birthdate": "05/12/1982",
-      "email": "b@test.com",
-      "phone": "213412424"
-    },
-    {
       "id": 3,
-      "firstName": "john",
+      "firstName": "d",
       "lastName": "doe",
-      "address": "123 Cassie Ave.",
+      "address": "214 Cassie Ave",
       "city": "Mountain View",
-      "birthdate": "05/12/1986",
+      "birthdate": "05/12/1980",
       "email": "c@test.com",
       "phone": "12341242421"
+    },
+    {
+      "firstName": "Kathir",
+      "lastName": "Radhakrishnan",
+      "address": "8409 High Meadows Dr",
+      "city": "Plano",
+      "birthdate": "",
+      "email": "rkathir@gmail.com",
+      "phone": "14692475175",
+      "id": 4
+    },
+    {
+      "firstName": "Kathir",
+      "lastName": "Radhakrishnan",
+      "address": "8409 High Meadows Dr",
+      "city": "Plano",
+      "birthdate": "",
+      "email": "rkathir@gmail.com",
+      "phone": "14692475175",
+      "id": 5
+    },
+    {
+      "firstName": "Rakesh",
+      "lastName": "",
+      "address": "High meadows dr",
+      "city": "plano",
+      "birthdate": "",
+      "email": "skchella@yahoo.com",
+      "phone": "2142279721",
+      "id": 6
+    },
+    {
+      "firstName": "KATHIRESAN",
+      "lastName": "RADHAKRISHNAN",
+      "address": "8409 High Meadows Dr",
+      "city": "Plano",
+      "birthdate": "",
+      "email": "rkathir@gmail.com",
+      "phone": "2142279721",
+      "id": 7
     }
   ],
   "electiondata": [
     {
-      "id": 1,
-      "title": "First election",
+      "title": "Ganesh Yoga Tshirt | Yoga Shirts for Women, Men Bella Canvas TShirt",
       "questions": [
         {
-          "questionid": 1,
-          "title": "Do you agree the product is useful",
-          "yesvote": 0,
-          "novote": 0
-        },
-        {
-          "questionid": 2,
-          "title": "Do you agree the product is useful",
-          "yesvote": 0,
-          "novote": 0
-        }
-      ],
-      "voters": [
-        {
-          "id": 1
-        },
-        {
-          "id": 2
-        }
-      ],
-      "totalvote": 0
-    },
-    {
-      "title": "test",
-      "questions": [
-        {
-          "title": "q1",
+          "title": "Question1",
           "yesvote": 0,
           "novote": 0,
           "id": 1
         },
         {
-          "title": "q1",
+          "title": "Question2",
           "yesvote": 0,
           "novote": 0,
           "id": 2
@@ -77,7 +80,173 @@
       ],
       "voters": [],
       "totalvote": 0,
+      "question2add1": "Question1",
+      "question2add2": "Question2",
+      "id": 1
+    },
+    {
+      "title": "Joy of Living Tee",
+      "questions": [
+        {
+          "title": "DDDD",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 1
+        },
+        {
+          "title": "DDD",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 2
+        }
+      ],
+      "voters": [],
+      "totalvote": 0,
+      "question2add1": "DDDD",
+      "question2add2": "DDD",
       "id": 2
+    },
+    {
+      "title": "Software Engineer",
+      "questions": [
+        {
+          "title": "q1",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 1
+        },
+        {
+          "title": "q2",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 2
+        }
+      ],
+      "voters": [],
+      "totalvote": 0,
+      "question2add1": "q1",
+      "question2add2": "q2",
+      "id": 3
+    },
+    {
+      "title": "ABCDDKKK",
+      "questions": [
+        {
+          "title": "Q1",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 1
+        },
+        {
+          "title": "Q2",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 2
+        }
+      ],
+      "voters": [],
+      "totalvote": 0,
+      "id": 4
+    },
+    {
+      "title": "dd",
+      "questions": [
+        {
+          "title": "dd",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 1
+        },
+        {
+          "title": "dd",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 2
+        }
+      ],
+      "voters": [],
+      "totalvote": 0,
+      "id": 5
+    },
+    {
+      "title": "ZZZ",
+      "questions": [
+        {
+          "title": "DDD",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 1
+        },
+        {
+          "title": "DDD",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 2
+        }
+      ],
+      "voters": [],
+      "totalvote": 0,
+      "id": 6
+    },
+    {
+      "title": "YYY",
+      "questions": [
+        {
+          "title": "YYY",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 1
+        },
+        {
+          "title": "YYY",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 2
+        }
+      ],
+      "voters": [],
+      "totalvote": 0,
+      "id": 7
+    },
+    {
+      "title": "dd",
+      "questions": [
+        {
+          "title": "dd",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 1
+        },
+        {
+          "title": "dd",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 2
+        }
+      ],
+      "voters": [],
+      "totalvote": 0,
+      "id": 8
+    },
+    {
+      "title": "ddsfds",
+      "questions": [
+        {
+          "title": "ssdds",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 1
+        },
+        {
+          "title": "sdsd",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 2
+        }
+      ],
+      "voters": [],
+      "totalvote": 0,
+      "id": 9
     }
   ]
 }

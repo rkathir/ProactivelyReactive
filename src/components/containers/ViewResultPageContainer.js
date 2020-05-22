@@ -9,7 +9,7 @@ import {
 
 import { ElectionDataPage } from '../pages/ElectionDataPage';
 
-export const ElectionRegistrationContainer = () => {
+export const ViewResultPageContainer = () => {
 
   const electionData = useSelector((state) => state.electionData);
 
