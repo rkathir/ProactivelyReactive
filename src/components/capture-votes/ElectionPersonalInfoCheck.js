@@ -9,7 +9,6 @@ export const ElectionPersonalInfoCheck = ({
   onRefreshVoter: refreshVoters,
 }) => {
   useEffect(() => {
-    console.log("refresh called");
     refreshVoters();
   }, []);
 
