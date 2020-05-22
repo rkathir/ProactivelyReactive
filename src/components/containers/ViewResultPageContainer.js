@@ -1,21 +1,25 @@
-import React from 'react';
-import { bindActionCreators } from 'redux';
-import { useSelector, useDispatch } from 'react-redux';
-
+import React from "react";
+import { bindActionCreators } from "redux";
+import { useSelector, useDispatch } from "react-redux";
 import {
-    addElection,
-    refreshElection,
-} from '../../actions/electionActions';
+  refreshElection
+} from "../../actions/electionActions";
 
-import { ElectionDataPage } from '../pages/ElectionDataPage';
+import { ViewResultPage } from '../pages/ViewResultPage';
 
 export const ViewResultPageContainer = () => {
+  const electionData = useSelector((state) => {
 
-  const electionData = useSelector((state) => state.electionData);
+    return state.electionData.find(e => e.id === state.selectElectionId);
+  });
 
-  const dispatchProps = bindActionCreators({
-    onSubmitElectionData: addElection,
-    onRefreshElectionData: refreshElection,
-  }, useDispatch());
-  return <ElectionDataPage {...dispatchProps} elections={electionData} />;
+
+
+  const dispatchProps = bindActionCreators(
+    {
+      onRefreshElection: refreshElection
+    },
+    useDispatch()
+  );
+  return <ViewResultPage {...dispatchProps} election={electionData} />;
 };

@@ -14,6 +14,7 @@ import { VoterListPageContainer } from "./containers/VoterListPageContainer";
 import { ElectionListPageContainer } from "./containers/ElectionListPageContainer";
 import { ElectionPersonalInfoCheckContainer } from "./containers/ElectionPersonalInfoCheckContainer";
 import { ElectionCastVoteContainer } from "./containers/ElectionCastVoteContainer";
+import { ViewResultPageContainer } from "./containers/ViewResultPageContainer";
 import { SuccessPage } from "./pages/SuccessPage";
 import { SideBar } from "./blocks/Sidebar";
 
@@ -21,6 +22,7 @@ import { appStore } from "../stores/appStore";
 
 export const App = () => {
   return (
+    <Provider store={appStore}>
     <PageLayout>
       <PageHeader />
       <MainMenu />
@@ -30,39 +32,25 @@ export const App = () => {
             <HomePage />
           </Route>
           <Route path="/registerVoter">
-            <Provider store={appStore}>
               <VoterRegistrationPageContainer />
-            </Provider>
           </Route>
           <Route path="/listVoters">
-            <Provider store={appStore}>
               <VoterListPageContainer />
-            </Provider>
           </Route>
           <Route path="/createElection" exact>
-            <Provider store={appStore}>
               <ElectionRegistrationContainer />
-            </Provider>
           </Route>
           <Route path="/createElection/viewResult">
-            <Provider store={appStore}>
-                
-            </Provider>
+                <ViewResultPageContainer/>
           </Route>
           <Route path="/captureVotes" exact>
-            <Provider store={appStore}>
               <ElectionListPageContainer />
-            </Provider>
           </Route>
           <Route path="/captureVotes/checkPersonalInfo" exact>
-            <Provider store={appStore}>
               <ElectionPersonalInfoCheckContainer />
-            </Provider>
           </Route>
           <Route path="/captureVotes/checkPersonalInfo/castVote" exact>
-            <Provider store={appStore}>
               <ElectionCastVoteContainer />
-            </Provider>
           </Route>
           <Route path="/captureVotes/checkPersonalInfo/castVote/success">
             <SuccessPage />
@@ -76,5 +64,6 @@ export const App = () => {
       </Switch>
       <PageFooter />
     </PageLayout>
+    </Provider>
   );
 };

@@ -7,7 +7,7 @@ import { ElectionDataForm } from '../election-mgr/ElectionDataForm';
 import './VoterRegistrationPage.css';
 
 export const ElectionDataPage = ({
-    onSubmitElectionData: addElection, elections, onRefreshElectionData: refreshElection
+    onSubmitElectionData: addElection, elections, onRefreshElectionData: refreshElection,onSelectedElection: selectedElection, 
 }) => {
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export const ElectionDataPage = ({
       <SectionHeader headerText="Election Manager Form" />
 
       <ContentSection headerText="Please fill in the details">
-        <ElectionDataForm buttonText="Submit Election Data" onSubmitElectionData={addElectionAndRedirect}  elections={elections} />
+        <ElectionDataForm buttonText="Submit Election Data" onSubmitElectionData={addElectionAndRedirect}  elections={elections} onSelectedElection={selectedElection} />
       </ContentSection>
     </>
   );
