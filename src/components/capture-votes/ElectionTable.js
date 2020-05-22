@@ -18,10 +18,10 @@ export const ElectionTable = ({
         </tr>
       </thead>
       <tbody>
-        {elections.map((elections) => (
+        {elections.map((election) => (
           <ElectionListRow
-            key={elections.id}
-            elections={elections}
+            key={election.id}
+            election={election}
             onSelect={selectElection}
           />
         ))}
