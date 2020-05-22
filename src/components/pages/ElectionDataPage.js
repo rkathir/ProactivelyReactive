@@ -1,5 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
 
 import { SectionHeader } from '../blocks/SectionHeader';
 import { ContentSection } from '../blocks/ContentSection';
@@ -10,19 +10,12 @@ export const ElectionDataPage = ({
     onSubmitElectionData: addElection, elections, onRefreshElectionData: refreshElection
 }) => {
 
-  const history = useHistory();
-
   useEffect(() => {
     refreshElection();
   }, []);
   
   const addElectionAndRedirect = (electiondata) => {
     addElection(electiondata);
-    /*
-    addElection(electiondata).then(() => {
-      history.push('/');
-    })
-    */
   }
 
   return (
