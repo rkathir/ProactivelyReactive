@@ -13,25 +13,10 @@ import { ElectionRegistrationContainer } from "./containers/ElectionRegistration
 import { VoterListPageContainer } from "./containers/VoterListPageContainer";
 import { ElectionListPageContainer } from "./containers/ElectionListPageContainer";
 import { ElectionPersonalInfoCheck } from "../components/capture-votes/ElectionPersonalInfoCheck";
+import { ElectionCastVotePage } from "../components/capture-votes/ElectionCastVotePage";
 import { SideBar } from "./blocks/Sidebar";
 
 import { appStore } from "../stores/appStore";
-
-
-// const activeElectionList = [
-//   {
-//     id: 1,
-//     title: "Congress Vote",
-//   },
-//   {
-//     id: 2,
-//     title: "Favorite Fruit",
-//   },
-//   {
-//     id: 3,
-//     title: "Favorite Car",
-//   },
-// ];
 
 export const App = () => {
   return (
@@ -55,7 +40,7 @@ export const App = () => {
           </Route>
           <Route path="/createElection" exact>
             <Provider store={appStore}>
-                <ElectionRegistrationContainer />
+              <ElectionRegistrationContainer />
             </Provider>
           </Route>
           <Route path="/createElection/viewResult">
@@ -70,6 +55,9 @@ export const App = () => {
           </Route>
           <Route path="/captureVotes/checkPersonalInfo" exact>
             <ElectionPersonalInfoCheck />
+          </Route>
+          <Route path="/captureVotes/checkPersonalInfo/castVote">
+            <ElectionCastVotePage />
           </Route>
         </Switch>
       </Content>
