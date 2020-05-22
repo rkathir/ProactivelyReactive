@@ -25,7 +25,7 @@ export const ElectionListPage = ({
     <>
       <SectionHeader headerText="Active Election List" />
       <ContentSection headerText="Select your choice of election">
-        <ElectionTable elections={elections} onSelect={selectandRedirect} buttonText="Select" />
+        <ElectionTable elections={elections} onSelect={selectandRedirect} buttonText="Vote" />
       </ContentSection>
     </>
   );
