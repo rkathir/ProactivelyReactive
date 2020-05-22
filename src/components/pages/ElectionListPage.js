@@ -4,7 +4,10 @@ import { SectionHeader } from "../blocks/SectionHeader";
 import { ContentSection } from "../blocks/ContentSection";
 import { ElectionTable } from "../capture-votes/ElectionTable";
 
-export const ElectionListPage = ( {elections, onRefreshElection: refreshElection} ) => {
+export const ElectionListPage = ({
+  elections,
+  onRefreshElection: refreshElection,
+}) => {
   const history = useHistory();
 
   useEffect(() => {
