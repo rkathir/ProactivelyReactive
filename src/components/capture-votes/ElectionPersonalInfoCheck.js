@@ -27,6 +27,7 @@ export const ElectionPersonalInfoCheck = ({
     for (var i = 0; i < voters.length; i++) {
       if (voters[i].birthdate === formData) {
         validData = true;
+        break;
       } else {
         validData = false;
       }

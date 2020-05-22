@@ -49,14 +49,15 @@
         {
           "questionid": 1,
           "title": "Pineapple on pizza?",
-          "yesvote": 5,
-          "novote": 7
+          "yesvote": 6,
+          "novote": 8
         },
         {
           "questionid": 2,
           "title": "Coffee is better than tea?",
-          "yesvote": 7,
           "novote": 5
+          "yesvote": 8,
+          "novote": 6
         }
       ],
       "voters": [
@@ -94,13 +95,13 @@
       "questions": [
         {
           "title": "Telsa",
-          "yesvote": 0,
+          "yesvote": 1,
           "novote": 0,
           "id": 1
         },
         {
           "title": "BMW",
-          "yesvote": 0,
+          "yesvote": 1,
           "novote": 0,
           "id": 2
         }

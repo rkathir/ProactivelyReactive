@@ -14,8 +14,8 @@ export const ViewResultPage = ({
         <table>
             <thead>
             <tr>
-                <th colspan="2">{election.questions[0].title}</th>
-                <th colspan="2">{election.questions[1].title}</th>
+                <th colSpan="2">{election.questions[0].title}</th>
+                <th colSpan="2">{election.questions[1].title}</th>
             </tr>
             <tr>
                 <th>Yes Vote Count</th>
