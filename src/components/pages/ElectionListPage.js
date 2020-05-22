@@ -8,6 +8,7 @@ import { ElectionTable } from "../capture-votes/ElectionTable";
 export const ElectionListPage = ({
   elections,
   onRefreshElection: refreshElection,
+  onSelectedElection: selectedElection,
 }) => {
   const history = useHistory();
 
@@ -15,7 +16,8 @@ export const ElectionListPage = ({
     refreshElection();
   }, []);
 
-  const selectandRedirect = () => {
+  const selectandRedirect = (electionId) => {
+    selectedElection(electionId);
     history.push("/captureVotes/checkPersonalInfo");
   };
 

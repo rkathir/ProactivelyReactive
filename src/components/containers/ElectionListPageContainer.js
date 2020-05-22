@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import {
   addElection,
   refreshElection,
+  createSelectElectionRequestAction
 } from "../../actions/electionActions";
 
 import { ElectionListPage } from "../pages/ElectionListPage";
@@ -14,6 +15,7 @@ export const ElectionListPageContainer = () => {
     {
       onAddElection: addElection,
       onRefreshElection: refreshElection,
+      onSelectedElection: createSelectElectionRequestAction,
     },
     useDispatch()
   );
