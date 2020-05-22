@@ -33,29 +33,90 @@
   ],
   "electiondata": [
     {
-      "id": 1,
-      "title": "First election",
+      "title": "Ganesh Yoga Tshirt | Yoga Shirts for Women, Men Bella Canvas TShirt",
       "questions": [
-         {
-          "questionid": 1,
-          "title": "Do you agree the product is useful",
+        {
+          "title": "Question1",
           "yesvote": 0,
-          "novote": 0
-         },
-         {
-          "questionid": 2, 
-          "title": "Do you agree the product is useful",
+          "novote": 0,
+          "id": 1
+        },
+        {
+          "title": "Question2",
           "yesvote": 0,
-          "novote": 0
-         }         
+          "novote": 0,
+          "id": 2
+        }
       ],
-      "voters": [
-        { "id": 1 },
-        { "id": 2 }
+      "voters": [],
+      "totalvote": 0,
+      "question2add1": "Question1",
+      "question2add2": "Question2",
+      "id": 1
+    },
+    {
+      "title": "Joy of Living Tee",
+      "questions": [
+        {
+          "title": "DDDD",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 1
+        },
+        {
+          "title": "DDD",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 2
+        }
       ],
-      "totalvote": 0
+      "voters": [],
+      "totalvote": 0,
+      "question2add1": "DDDD",
+      "question2add2": "DDD",
+      "id": 2
+    },
+    {
+      "title": "Software Engineer",
+      "questions": [
+        {
+          "title": "q1",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 1
+        },
+        {
+          "title": "q2",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 2
+        }
+      ],
+      "voters": [],
+      "totalvote": 0,
+      "question2add1": "q1",
+      "question2add2": "q2",
+      "id": 3
+    },
+    {
+      "title": "ABCDDKKK",
+      "questions": [
+        {
+          "title": "Q1",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 1
+        },
+        {
+          "title": "Q2",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 2
+        }
+      ],
+      "voters": [],
+      "totalvote": 0,
+      "id": 4
     }
-
   ]
-
 }
