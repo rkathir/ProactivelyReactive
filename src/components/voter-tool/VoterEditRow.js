@@ -22,7 +22,7 @@ export const VoterEditRow = ({ voterRow, onSaveVoter, onCancelVoter: cancelVoter
             <input type="text" id="voter-firstname-input" name="firstName" value={voterForm.firstName} onChange={change} />
         </td>
         <td>
-            <input type="text" id="voter-lastname-input" name="lastname" value={ voterForm.lastName } onChange={change} />
+            <input type="text" id="voter-lastname-input" name="lastName" value={ voterForm.lastName } onChange={change} />
         </td>
         <td>
             <input type="text" id="voter-address-input" name="address" value={ voterForm.address } onChange={change} />
