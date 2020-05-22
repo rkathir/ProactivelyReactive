@@ -1,16 +1,24 @@
 import React from "react";
 
-import { useForm } from "../../hooks/useForm";
+import { useHistory } from "react-router-dom";
 import { SectionHeader } from "../blocks/SectionHeader";
 import { ContentSection } from "../blocks/ContentSection";
 
 export const ElectionPersonalInfoCheck = () => {
-  const [voterForm, change] = useForm({
-    firstName: "",
-    birthdate: "",
-  });
+  const history = useHistory();
 
-  const submitInfo = () => {};
+  const submitInfo = () => {
+    var voterData = ["05121980", "02101988", "01031980"];
+    var formData = document.getElementById("model-input-dob").value;
+
+    // comapring dob with voterData array
+    for (var i = 0; i < voterData.length; i++)
+      if (voterData[i] === formData) {
+        return history.push("/captureVotes/checkPersonalInfo/castVote");
+      } else {
+        return console.log("failure");
+      }
+  };
 
   return (
     <>
@@ -19,28 +27,17 @@ export const ElectionPersonalInfoCheck = () => {
         <form>
           <div>
             <label htmlFor="make-input">First Name:</label>
-            <input
-              type="text"
-              id="make-input"
-              name="First Name"
-              value={voterForm.firstName}
-              onChange={change}
-            />
+            <input type="text" id="make-input" name="First Name" />
           </div>
           <div>
             <label htmlFor="model-input">Date Of Birth:</label>
-            <input
-              type="text"
-              id="model-input"
-              name="Date Of Birth"
-              value={voterForm.birthdate}
-              onChange={change}
-            />
+            <input type="text" id="model-input-dob" name="Date Of Birth" />
           </div>
           <button type="button" onClick={submitInfo}>
             Submit
           </button>
         </form>
+        <div>{/* // error page */}</div>
       </ContentSection>
     </>
   );

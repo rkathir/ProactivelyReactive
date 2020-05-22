@@ -12,6 +12,7 @@ import { VoterRegistrationPageContainer } from "./containers/VoterRegistrationPa
 import { VoterListPageContainer } from "./containers/VoterListPageContainer";
 import { ElectionListPage } from "./pages/ElectionListPage";
 import { ElectionPersonalInfoCheck } from "../components/capture-votes/ElectionPersonalInfoCheck";
+import { ElectionCastVotePage } from "../components/capture-votes/ElectionCastVotePage";
 import { SideBar } from "./blocks/Sidebar";
 
 import { colorStore } from "../stores/colorStore";
@@ -57,8 +58,11 @@ export const App = () => {
           <Route path="/captureVotes" exact>
             <ElectionListPage elections={activeElectionList} />
           </Route>
-          <Route path="/captureVotes/checkPersonalInfo">
+          <Route path="/captureVotes/checkPersonalInfo" exact>
             <ElectionPersonalInfoCheck />
+          </Route>
+          <Route path="/captureVotes/checkPersonalInfo/castVote">
+            <ElectionCastVotePage />
           </Route>
           <Route path="/color-tool">
             <Provider store={colorStore}>
