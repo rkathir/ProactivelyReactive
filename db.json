@@ -29,7 +29,6 @@
       "birthdate": "05/12/1980",
       "email": "c@test.com",
       "phone": "12341242421"
-<<<<<<< HEAD
     },
     {
       "firstName": "Kathir",
@@ -60,185 +59,94 @@
       "email": "skchella@yahoo.com",
       "phone": "2142279721",
       "id": 6
-=======
->>>>>>> a06463a8b42cf936b78de47928eff5daa162d3ce
     }
   ],
   "electiondata": [
     {
-      "id": 1,
-      "title": "First election",
+      "title": "Ganesh Yoga Tshirt | Yoga Shirts for Women, Men Bella Canvas TShirt",
       "questions": [
         {
-          "questionid": 1,
-          "title": "Do you agree the product is useful",
+          "title": "Question1",
           "yesvote": 0,
-          "novote": 0
-        },
-        {
-          "questionid": 2,
-          "title": "Do you agree the product is useful",
-          "yesvote": 0,
-          "novote": 0
-        }
-      ],
-      "voters": [
-        {
+          "novote": 0,
           "id": 1
         },
         {
+          "title": "Question2",
+          "yesvote": 0,
+          "novote": 0,
           "id": 2
         }
       ],
-      "totalvote": 0
+      "voters": [],
+      "totalvote": 0,
+      "question2add1": "Question1",
+      "question2add2": "Question2",
+      "id": 1
     },
     {
       "title": "Joy of Living Tee",
-      "options": [],
+      "questions": [
+        {
+          "title": "DDDD",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 1
+        },
+        {
+          "title": "DDD",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 2
+        }
+      ],
+      "voters": [],
+      "totalvote": 0,
+      "question2add1": "DDDD",
+      "question2add2": "DDD",
       "id": 2
     },
     {
-      "title": "Short-Sleeve Unisex T-Shirt",
-      "questions": [],
+      "title": "Software Engineer",
+      "questions": [
+        {
+          "title": "q1",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 1
+        },
+        {
+          "title": "q2",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 2
+        }
+      ],
       "voters": [],
       "totalvote": 0,
+      "question2add1": "q1",
+      "question2add2": "q2",
       "id": 3
     },
     {
-      "title": "Joy of Living Tee",
-      "questions": "question1",
+      "title": "ABCDDKKK",
+      "questions": [
+        {
+          "title": "Q1",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 1
+        },
+        {
+          "title": "Q2",
+          "yesvote": 0,
+          "novote": 0,
+          "id": 2
+        }
+      ],
       "voters": [],
       "totalvote": 0,
       "id": 4
-    },
-    {
-      "title": "dd",
-      "questions": [
-        {
-          "title": "",
-          "yesvote": 0,
-          "novote": 0
-        }
-      ],
-      "voters": [],
-      "totalvote": 0,
-      "question2add": "dd",
-      "id": 5
-    },
-    {
-      "title": "Plano City Council",
-      "questions": [
-        {
-          "title": "",
-          "yesvote": 0,
-          "novote": 0
-        },
-        {
-          "title": "Approve Cricket stadium",
-          "yesvote": 0,
-          "novote": 0
-        }
-      ],
-      "voters": [],
-      "totalvote": 0,
-      "question2add": "Approve Cricket stadium",
-      "id": 6
-    },
-    {
-      "title": "San Diego City Council",
-      "questions": [
-        {
-          "title": "",
-          "yesvote": 0,
-          "novote": 0
-        },
-        {
-          "title": "Approve Cricket Stadium",
-          "yesvote": 0,
-          "novote": 0
-        }
-      ],
-      "voters": [],
-      "totalvote": 0,
-      "question2add": "Approve Cricket Stadium",
-      "id": 7
-    },
-    {
-      "title": "San Diego City Council",
-      "questions": [
-        {
-          "title": "",
-          "yesvote": 0,
-          "novote": 0
-        },
-        {
-          "title": "ABC",
-          "yesvote": 0,
-          "novote": 0
-        }
-      ],
-      "voters": [],
-      "totalvote": 0,
-      "question2add": "ABC",
-      "id": 8
-    },
-    {
-      "title": "Test1",
-      "questions": [
-        {
-          "title": "Test1",
-          "yesvote": 0,
-          "novote": 0
-        }
-      ],
-      "voters": [],
-      "totalvote": 0,
-      "question2add": "",
-      "id": 9
-    },
-    {
-      "title": "US Election",
-      "questions": [
-        {
-          "title": "Question1",
-          "yesvote": 0,
-          "novote": 0,
-          "id": 1
-        },
-        {
-          "title": "Question2",
-          "yesvote": 0,
-          "novote": 0,
-          "id": 2
-        }
-      ],
-      "voters": [],
-      "totalvote": 0,
-      "question2add1": "Question1",
-      "question2add2": "Question2",
-      "id": 10
-    },
-    {
-      "title": "RakeshTest1",
-      "questions": [
-        {
-          "title": "Question1",
-          "yesvote": 0,
-          "novote": 0,
-          "id": 1
-        },
-        {
-          "title": "Question2",
-          "yesvote": 0,
-          "novote": 0,
-          "id": 2
-        }
-      ],
-      "voters": [],
-      "totalvote": 0,
-      "question2add1": "Question1",
-      "question2add2": "Question2",
-      "id": 11
     }
   ]
 }

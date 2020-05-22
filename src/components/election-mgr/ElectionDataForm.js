@@ -19,6 +19,9 @@ export const ElectionDataForm = ({ buttonText, onSubmitElectionData }) => {
       let question2 = {title: electionDataFom.question2add2, yesvote: 0, novote: 0, id: 2};
       electionDataFom.questions.push(question2); 
     }
+    delete electionDataFom.question2add1;
+    delete electionDataFom.question2add2;
+    
 
     onSubmitElectionData({ ...electionDataFom });
     resetElectionDataForm();
@@ -46,7 +49,9 @@ export const ElectionDataForm = ({ buttonText, onSubmitElectionData }) => {
    
       <button type="button" onClick={submitElectionData}>{buttonText}</button>
       </td>
-        <td>
+        <td> 
+          {/* list the Questions here */}
+          
         </td>
       </tr>
       </table>
