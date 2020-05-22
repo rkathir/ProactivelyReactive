@@ -8,7 +8,9 @@ export const ViewResultPage = ({
   console.log( "View Result Page:" + JSON.stringify(election));
   return (
     <>
-        
+        <br />
+        <h2>Election Name: {election.title}</h2>
+        <br />
         <table>
             <thead>
             <tr>
