@@ -2,40 +2,30 @@
 export const REFRESH_ELECTION_REQUEST_ACTION = 'REFRESH_ELECTION_REQUEST';
 export const REFRESH_ELECTION_DONE_ACTION = 'REFRESH_ELECTION_DONE';
 export const ADD_ELECTION_REQUEST_ACTION = 'ADD_ELECTION_REQUEST';
-export const DELETE_ELECTION_REQUEST_ACTION = 'DELETE_ELECTION_REQUEST';
+export const SELECT_ELECTION_REQUEST_ACTION = 'SELECT_ELECTION_REQUEST';
 
 export const createRefreshElectionRequestAction = () => ({ type: REFRESH_ELECTION_REQUEST_ACTION });
-export const createRefreshElectionDoneAction = (electiondata) => ({ type: REFRESH_ELECTION_DONE_ACTION, electiondata });
-export const createAddElectionRequestAction = electiondata => ({ type: ADD_ELECTION_REQUEST_ACTION, electiondata });
-export const createDeleteElectionRequestAction = electiondata => ({ type: DELETE_ELECTION_REQUEST_ACTION, electiondata });
+export const createRefreshElectionDoneAction = (electionData) => ({ type: REFRESH_ELECTION_DONE_ACTION, electionData });
+export const createAddElectionRequestAction = electionData => ({ type: ADD_ELECTION_REQUEST_ACTION, electionData });
+export const createSelectElectionRequestAction = electionId => ({ type: SELECT_ELECTION_REQUEST_ACTION, electionId });
 
 export const refreshElection = () => {
   return dispatch => {
     dispatch(createRefreshElectionRequestAction());
     return fetch('http://localhost:3060/electiondata')
       .then(res => res.json())
-      .then(electiondata => dispatch(createRefreshElectionDoneAction(electiondata)));
+      .then(electionData => dispatch(createRefreshElectionDoneAction(electionData)));
   };
 
 };
 
-export const addElection = electiondata => {
+export const addElection = electionData => {
   return dispatch => {
-    dispatch(createAddElectionRequestAction(electiondata));
+    dispatch(createAddElectionRequestAction(electionData));
     return fetch('http://localhost:3060/electiondata', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(electiondata),
-    })
-      .then(() => dispatch(refreshElection()));
-  };
-};
-
-export const deleteElection = electionId => {
-  return dispatch => {
-    dispatch(createDeleteElectionRequestAction(electionId));
-    return fetch('http://localhost:3060/electiondata/' + encodeURIComponent(electionId), {
-      method: 'DELETE',
+      body: JSON.stringify(electionData),
     })
       .then(() => dispatch(refreshElection()));
   };

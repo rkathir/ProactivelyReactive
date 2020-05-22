@@ -1,12 +1,14 @@
 import React from "react";
 
-export const ElectionListRow = ({ elections, onSelect: checkPersonalnfo }) => {
+import { DataCell } from "./misc";
+
+export const ElectionListRow = ({ election, onSelect: checkPersonalnfo }) => {
   return (
     <tr>
-      <td>{elections.id}</td>
-      <td>{elections.title}</td>
+      <td>{election.id}</td>
+      <td>{election.title}</td>
       <td>
-        <button type="button" onClick={() => checkPersonalnfo(elections.id)}>
+        <button type="button" onClick={() => checkPersonalnfo(election.id)}>
           Select
         </button>
       </td>
