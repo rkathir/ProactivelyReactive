@@ -1,22 +1,35 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import { useForm } from "../../hooks/useForm";
 import { useHistory } from "react-router-dom";
 import { SectionHeader } from "../blocks/SectionHeader";
 import { ContentSection } from "../blocks/ContentSection";
 
-export const ElectionPersonalInfoCheck = () => {
+export const ElectionPersonalInfoCheck = ({
+  voters,
+  onRefreshVoter: refreshVoters,
+}) => {
+  useEffect(() => {
+    console.log("refresh called");
+    refreshVoters();
+  }, []);
+
+  const [piForm, change, resetPIForm] = useForm({
+    firstName: "",
+    birthdate: "",
+  });
+
   const history = useHistory();
 
   const submitInfo = () => {
-    var voterData = ["05121980", "02101988", "01031980"];
-    var formData = document.getElementById("model-input-dob").value;
+    var formData = document.getElementById("voter-birthdate-input").value;
 
     // comapring dob with voterData array
-    for (var i = 0; i < voterData.length; i++)
-      if (voterData[i] === formData) {
+    for (var i = 0; i < voters.length; i++)
+      if (voters[i].birthdate === formData) {
         return history.push("/captureVotes/checkPersonalInfo/castVote");
       } else {
-        return console.log("failure");
+        alert("Faliure");
+        resetPIForm();
       }
   };
 
@@ -26,12 +39,25 @@ export const ElectionPersonalInfoCheck = () => {
       <ContentSection headerText="Please enter your information:">
         <form>
           <div>
-            <label htmlFor="make-input">First Name:</label>
-            <input type="text" id="make-input" name="First Name" />
+            <label htmlFor="voter-firstname-input">First Name:</label>
+            <input
+              type="text"
+              id="voter-firstname-input"
+              name="firstName"
+              value={piForm.firstName}
+              onChange={change}
+            />
           </div>
+
           <div>
-            <label htmlFor="model-input">Date Of Birth:</label>
-            <input type="text" id="model-input-dob" name="Date Of Birth" />
+            <label htmlFor="voter-birthdate-input">Birthdate:</label>
+            <input
+              type="text"
+              id="voter-birthdate-input"
+              name="birthdate"
+              value={piForm.birthdate}
+              onChange={change}
+            />
           </div>
           <button type="button" onClick={submitInfo}>
             Submit
