@@ -12,7 +12,7 @@ export const DisplayQuestionsComponent = ({
       console.log(election);
     // const newElection = election.concat(); // TODO: concat not working
     election.questions.map( question => (  //TODO: this is changing state directly, need to fix this
-        (document.getElementById(election.id+question.questionid).checked)
+        (document.getElementById(question.questionid).checked)
         ? question.yesvote = question.yesvote+1
         : question.novote = question.novote+1
     ));
@@ -30,7 +30,7 @@ export const DisplayQuestionsComponent = ({
             <form>
               <input
                 type="checkbox"
-                id={election.id+question.questionid}
+                id={question.questionid}
                 name={question.questionid}
                 value={question.questionid}
               />

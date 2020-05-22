@@ -33,7 +33,7 @@ export const ElectionDataForm = ({elections, buttonText,
         title: electionDataFom.question2add1,
         yesvote: 0,
         novote: 0,
-        id: 1,
+        questionid: 1,
       };
       electionDataFom.questions.push(question1);
     }
@@ -42,7 +42,7 @@ export const ElectionDataForm = ({elections, buttonText,
         title: electionDataFom.question2add2,
         yesvote: 0,
         novote: 0,
-        id: 2,
+        questionid: 2,
       };
       electionDataFom.questions.push(question2);
     }
