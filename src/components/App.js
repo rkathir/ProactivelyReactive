@@ -13,7 +13,8 @@ import { ElectionRegistrationContainer } from "./containers/ElectionRegistration
 import { VoterListPageContainer } from "./containers/VoterListPageContainer";
 import { ElectionListPageContainer } from "./containers/ElectionListPageContainer";
 import { ElectionPersonalInfoCheckContainer } from "./containers/ElectionPersonalInfoCheckContainer";
-import { ElectionCastVotePage } from "../components/capture-votes/ElectionCastVotePage";
+import { ElectionCastVoteContainer } from "./containers/ElectionCastVoteContainer";
+import { SuccessPage } from "./pages/SuccessPage";
 import { SideBar } from "./blocks/Sidebar";
 
 import { appStore } from "../stores/appStore";
@@ -58,8 +59,13 @@ export const App = () => {
               <ElectionPersonalInfoCheckContainer />
             </Provider>
           </Route>
-          <Route path="/captureVotes/checkPersonalInfo/castVote">
-            <ElectionCastVotePage />
+          <Route path="/captureVotes/checkPersonalInfo/castVote" exact>
+            <Provider store={appStore}>
+              <ElectionCastVoteContainer />
+            </Provider>
+          </Route>
+          <Route path="/captureVotes/checkPersonalInfo/castVote/success">
+            <SuccessPage />
           </Route>
         </Switch>
       </Content>
