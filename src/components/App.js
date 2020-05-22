@@ -17,22 +17,6 @@ import { SideBar } from "./blocks/Sidebar";
 
 import { appStore } from "../stores/appStore";
 
-
-// const activeElectionList = [
-//   {
-//     id: 1,
-//     title: "Congress Vote",
-//   },
-//   {
-//     id: 2,
-//     title: "Favorite Fruit",
-//   },
-//   {
-//     id: 3,
-//     title: "Favorite Car",
-//   },
-// ];
-
 export const App = () => {
   return (
     <PageLayout>
