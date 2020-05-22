@@ -4,15 +4,10 @@ import React, { useEffect }  from "react";
 import {DisplayQuestionsComponent} from '../capture-votes/DisplayQuestionsComponent';
 
 export const ElectionCastVotePage = ({
-  elections,
+  election,
   selectedElectionId,
-  onRefreshElection: refreshElection,
   onSaveElection: saveElection,
 }) => {
-
-  useEffect(() => {
-    refreshElection();
-  }, []);
 
   return (
     <table>
@@ -23,15 +18,11 @@ export const ElectionCastVotePage = ({
         </tr>
       </thead>
       <tbody>
-        {elections.map((election) => (
-            election.id === selectedElectionId
-            ? <DisplayQuestionsComponent
-                key={election.id}
-                election={election}
-                onSaveElection={saveElection}
-              />
-              : null
-          ))}
+          <DisplayQuestionsComponent
+              key={election.id}
+              election={election}
+              onSaveElection={saveElection}
+            />
       </tbody>
     </table>
   );
