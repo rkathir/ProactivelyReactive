@@ -50,9 +50,7 @@ export const App = () => {
               <ElectionPersonalInfoCheckContainer />
           </Route>
           <Route path="/captureVotes/checkPersonalInfo/castVote" exact>
-            <Provider store={appStore}>
               <ElectionCastVoteContainer />
-            </Provider>
           </Route>
           <Route path="/captureVotes/checkPersonalInfo/castVote/success">
             <SuccessPage />
